@@ -1,0 +1,204 @@
+<html>
+<head>
+	<title>CITI | Income Predictor</title
+</head>
+<body>
+	
+<div class="container">
+
+<div class="container contact-form">
+
+	<div class="contact-image">
+		<img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
+	</div>
+
+  <form action="/result" method="POST">
+    
+	<h1>Income Prediction Form</h1>
+
+	<div class="form-group">
+    <label for="age">Enter Age</label>
+    <input type="text" class="form-control" id="age" placeholder="Ex : 50" name="age" required>
+	</div>
+	
+	
+	<div class="form-group">
+		<label for="w_class">Working Class</label>
+		<select class="form-control" id="w_class" name="w_class">
+		  <option value="0">Federal-gov</option>
+		  <option value="1">Local-gov</option>
+		  <option value="2">Never-worked</option>
+		  <option value="3">Private</option>
+		  <option value="4">Self-emp-inc</option>
+		  <option value="5">Self-emp-not-inc</option>
+		  <option value="6">State-gov</option>
+		  <option value="7">Without-pay</option>
+		</select>
+    </div>
+	
+	
+	<div class="form-group">
+    <label for="edu">Education</label>
+    <select class="form-control" id="edu" name="edu">
+      <option value="0">10th</option>
+      <option value="1">11th</option>
+      <option value="2">12th</option>
+      <option value="3">1st-4th</option>
+      <option value="4">5th-6th</option>
+      <option value="5">7th-8th</option>
+      <option value="6">9th</option>
+      <option value="7">Assoc-acdm</option>
+      <option value="8">Assoc-voc</option>
+      <option value="9">Bachelors</option>
+      <option value="10">Doctorate</option>
+      <option value="11">HS-grad</option>
+      <option value="12">Masters</option>
+      <option value="13">Preschool</option>
+      <option value="14">Prof-school</option>
+      <option value="15">16 - Some-college</option>
+    </select>
+    </div>
+	
+	<div class="form-group">
+    <label for="martial_stat">Marital Status</label>
+    <select class="form-control" id="martial_stat" name="martial_stat">
+      <option value="0">divorced</option>
+      <option value="1">married</option>
+      <option value="2">not married</option>
+    </select>
+    </div>
+	
+	
+	<div class="form-group">
+    <label for="occup">Occupation</label>
+    <select class="form-control" id="occup" name="occup">
+      <option value="0">Adm-clerical</option>
+      <option value="1">Armed-Forces</option>
+      <option value="2">Craft-repair</option>
+      <option value="3">Exec-managerial</option>
+      <option value="4">Farming-fishing</option>
+      <option value="5">Handlers-cleaners</option>
+      <option value="6">Machine-op-inspct</option>
+      <option value="7">Other-service</option>
+      <option value="8">Priv-house-serv</option>
+      <option value="9">Prof-specialty</option>
+      <option value="10">Protective-serv</option>
+      <option value="11">Sales</option>
+      <option value="12">Tech-support</option>
+      <option value="13">Transport-moving</option>
+    </select>
+    </div>
+	
+	
+	<div class="form-group">
+    <label for="relation">Relationship</label>
+    <select class="form-control" id="relation" name="relation">
+      <option value="0">Husband</option>
+      <option value="1">Not-in-family</option>
+      <option value="2">Other-relative</option>
+      <option value="3">Own-child</option>
+      <option value="4">Unmarried</option>
+      <option value="5">Wife</option>
+    </select>
+    </div>
+	
+
+	<div class="form-group">
+    <label for="race">Race</label>
+    <select class="form-control" id="race" name="race">
+      <option value="0">Amer Indian Eskimo</option>
+      <option value="1">Asian Pac Islander</option>
+      <option value="2">Black</option>
+      <option value="3">Other</option>
+      <option value="4">White</option>
+    </select>
+	</div>
+    
+	
+	<div class="form-group">
+    <label for="gender">Gender</label>
+    <select class="form-control" id="gender" name="gender">
+      <option value="0">Female</option>
+      <option value="1">Male</option>
+    </select>
+    </div>
+	
+	<div class="form-group">
+    <label for="c_gain">Capital Gain</label>
+    <input type="text" class="form-control" id="c_gain" placeholder="Between : [ 0 - 99999 ]" name="c_gain" required>
+	</div>
+	
+	<div class="form-group">
+    <label for="c_loss">Capital Loss</label>
+    <input type="text" class="form-control" id="c_loss" placeholder="Between : [ 0 - 4356 ]" name="c_loss" required>
+	</div>
+	
+	
+	
+	<div class="form-group">
+    <label for="hours_per_week">Hours per Week</label>
+    <input type="text" class="form-control" id="hours_per_week" placeholder="Between : [ 1 - 99 ]" name="hours_per_week" required>
+	</div>
+	
+	
+	<div class="form-group">
+    <label for="native-country">Native Country</label>
+    <select class="form-control" id="native-country" name="native-country">
+      <option value="0">Cambodia</option>
+      <option value="1">Canada</option>
+      <option value="2">China</option>
+      <option value="3">Columbia</option>
+      <option value="4">Cuba</option>
+      <option value="5">Dominican Republic</option>
+      <option value="6">Ecuador</option>
+      <option value="7">El Salvadorr</option>
+      <option value="8">England</option>
+      <option value="9">France</option>
+      <option value="10">Germany</option>
+      <option value="11">Greece</option>
+      <option value="12">Guatemala</option>
+      <option value="13">Haiti</option>
+      <option value="14">Netherlands</option>
+      <option value="15">Honduras</option>
+      <option value="16">HongKong</option>
+      <option value="17">Hungary</option>
+      <option value="18">India</option>
+      <option value="19">Iran</option>
+      <option value="20">Ireland</option>
+      <option value="21">Italy</option>
+      <option value="22">Jamaica</option>
+      <option value="23">Japan</option>
+      <option value="24">Laos</option>
+      <option value="25">Mexico</option>
+      <option value="26">Nicaragua</option>
+      <option value="27">Outlying-US(Guam-USVI-etc)</option>
+      <option value="28">Peru</option>
+      <option value="29">Philippines</option>
+      <option value="30">Poland</option>
+      <option value="11">Portugal</option>
+      <option value="32">Puerto-Rico</option>
+      <option value="33">Scotland</option>
+      <option value="34">South</option>
+      <option value="35">Taiwan</option>
+      <option value="36">Thailand</option>
+      <option value="37">Trinadad&Tobago</option>
+      <option value="38">United States</option>
+      <option value="39">Vietnam</option>
+      <option value="40">Yugoslavia</option>
+    </select>
+	</div>
+  
+	
+	
+    <input class="btn btn-success btnContact" type="submit" value="Submit">
+  </form>
+  </div>
+</div>
+</div>
+<link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/mystyle.css') }}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
